@@ -31,7 +31,7 @@ export const storyEntries = [
     year: "2026",
     commit: "still-learning",
     message: "exploring > expert. always.",
-    body: "Final year. Multiple internships — Xebia for DevOps, TagMango again for full-stack, and now Intact India where I'm working with enterprise-grade tools: Azure DevOps, Nexus, SonarQube, Atlassian, Terraform, az-cli. Built FlowForge as my major project, have production apps handling real traffic, and DevOps projects ranging from self-healing Kubernetes systems to EKS clusters provisioned with Terraform. But the most important thing I've figured out: I don't know everything, and that's okay. I build with help, I learn along the way. DSA isn't my strongest suit — I know that, I'm working on it. Exploring > claiming expertise. Always.",
+    body: "Final year. Few internships — Xebia for DevOps, Eficaz again for full-stack, and now Intact India where I'm working with enterprise-grade tools: Azure DevOps, Nexus, SonarQube, Atlassian, Terraform, az-cli. Built FlowForge as my major project, have production apps handling real traffic, and DevOps projects ranging from self-healing Kubernetes systems to EKS clusters provisioned with Terraform. But the most important thing I've figured out: I don't know everything, and that's okay. I build with help, I learn along the way. DSA isn't my strongest suit — I know that, I'm working on it. Exploring > claiming expertise. Always.",
     tags: ["FlowForge", "Azure DevOps", "Intact India", "Xebia", "Kubernetes", "Terraform", "Self-Awareness"],
     project: null,
   },

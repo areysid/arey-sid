@@ -3,7 +3,7 @@ export const profile = {
   tagline: "DevOps Enthusiast & Full-Stack Explorer",
   subtitle: "CS Undergrad @ UPES Dehradun",
   bio: "I build things that ship — from CI/CD pipelines and cloud infrastructure to full-stack web apps. Currently in my final year, working at the intersection of DevOps and modern web development.",
-  email: "sidharthmalpani@gmail.com",
+  email: "malpanisidharth.work@gmail.com",
   phone: "+91 88290 21001",
   github: "https://github.com/areysid",
   linkedin: "https://www.linkedin.com/in/sidharth-malpani",

@@ -3,7 +3,7 @@ export const storyEntries = [
     year: "2022-23",
     commit: "init",
     message: "picked devops because the name was cool",
-    body: "Started college as a lost introvert with no idea what any of this meant. While everyone around me was chasing AI/ML and other booming specializations, I picked DevOps — genuinely just because the name caught my eye for a second. No plan, no roadmap. Just a name on a form.",
+    body: "Started college as a lost introvert with no idea what any of this meant. While other specializations like AI/ML, CCVT and FSAI were booming, I picked DevOps — genuinely just because the name caught my eye for a second. No plan, no roadmap. Just a name on a form.",
     tags: ["Year 1", "UPES", "DevOps Specialization"],
     project: null,
   },

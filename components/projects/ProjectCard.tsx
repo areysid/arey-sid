@@ -25,6 +25,8 @@ const statusColors: Record<string, string> = {
   "Live":        "text-green-400/70 border-green-400/20",
   "Production":  "text-emerald-400/80 border-emerald-400/25",
   "Archived":    "text-white/30 border-white/10",
+  "Infra Offline": "text-orange-400/60 border-orange-400/15",
+  "Local / GitHub Only": "text-blue-400/50 border-blue-400/15",
 };
 
 export default function ProjectCard({ project, index, onClick }: ProjectCardProps) {

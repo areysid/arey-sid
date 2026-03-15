@@ -143,7 +143,7 @@ export const projects = [
     tags: ["Kubernetes", "Prometheus", "Grafana", "Python", "Machine Learning", "Predictive Analytics"],
     github: "https://github.com/areysid/Self-Healing-Kubernetes-System-With-Predictive-Monitoring",
     live: "",
-    status: "Live",
+    status: "Local / GitHub Only",
   },
   {
     title: "DevOps Exam App",
@@ -152,7 +152,7 @@ export const projects = [
     tags: ["Jenkins", "Docker", "SonarQube", "CI/CD"],
     github: "https://github.com/areysid/devops-exam-app",
     live: "",
-    status: "Live",
+    status: "Infra Offline",
   },
   {
     title: "AWS Terraform Module — SonarQube EC2",
@@ -161,7 +161,7 @@ export const projects = [
     tags: ["Terraform", "AWS EC2", "SonarQube", "IaC"],
     github: "https://github.com/areysid/AWS_Terraform_Module_EC2-Sonarqube",
     live: "",
-    status: "Live",
+    status: "Infra Offline",
   },
   {
     title: "Jenkins + Terraform EKS",
@@ -170,7 +170,7 @@ export const projects = [
     tags: ["Jenkins", "Terraform", "AWS EKS", "Kubernetes", "CI/CD"],
     github: "https://github.com/areysid/Jenkins-Terraform-EKS",
     live: "",
-    status: "Live",
+    status: "Infra Offline",
   },
   {
     title: "Ingress Controller Project",
@@ -179,7 +179,7 @@ export const projects = [
     tags: ["Kubernetes", "Jenkins", "Docker", "ArgoCD", "Node.js"],
     github: "https://github.com/areysid/Microservices-ingress-controller",
     live: "",
-    status: "Live",
+    status: "Infra Offline",
   },
   {
     title: "K8s Voting App",
@@ -188,7 +188,7 @@ export const projects = [
     tags: ["Kubernetes", "Cloud-Native", "Docker", "Microservices"],
     github: "https://github.com/areysid/K8s-voting-app",
     live: "",
-    status: "Live",
+    status: "Infra Offline",
   },
   {
     title: "TechNova CI/CD Pipeline",
@@ -197,7 +197,7 @@ export const projects = [
     tags: ["AWS", "Node.js", "CI/CD", "GitHub Actions"],
     github: "https://github.com/Boora-Raman/TechNova-CI-CD-Pipeline",
     live: "",
-    status: "Live",
+    status: "Infra Offline",
   },
 ];
 

@@ -13,49 +13,43 @@ export const profile = {
 
 export const skills = [
   // Languages
-  { name: "JavaScript", category: "Languages", level: 85 },
-  { name: "TypeScript", category: "Languages", level: 82 },
+  { name: "JavaScript", category: "Languages", level: 65 },
+  { name: "TypeScript", category: "Languages", level: 70 },
   { name: "Python", category: "Languages", level: 75 },
   { name: "Java", category: "Languages", level: 65 },
   { name: "C", category: "Languages", level: 60 },
 
   // Frontend & Full-Stack
-  { name: "React / Next.js", category: "Frontend", level: 88 },
+  { name: "React / Next.js", category: "Frontend", level: 80 },
   { name: "Tailwind CSS", category: "Frontend", level: 90 },
-  { name: "Node.js / Express", category: "Frontend", level: 80 },
+  { name: "Node.js / Express", category: "Frontend", level: 70 },
   { name: "HTML / CSS", category: "Frontend", level: 90 },
 
   // Database
-  { name: "Prisma / SQL", category: "Database", level: 78 },
-  { name: "MongoDB Atlas", category: "Database", level: 72 },
-  { name: "Firebase", category: "Database", level: 70 },
-  { name: "Convex", category: "Database", level: 68 },
+  { name: "Prisma / SQL", category: "Database", level: 75 },
+  { name: "MongoDB Atlas", category: "Database", level: 60 },
+  { name: "Firebase", category: "Database", level: 50 },
+  { name: "Convex", category: "Database", level: 65 },
 
   // DevOps & CI/CD
-  { name: "Docker", category: "DevOps & CI/CD", level: 82 },
-  { name: "Jenkins", category: "DevOps & CI/CD", level: 78 },
-  { name: "Terraform", category: "DevOps & CI/CD", level: 75 },
-  { name: "Kubernetes", category: "DevOps & CI/CD", level: 65 },
-  { name: "GitHub Actions", category: "DevOps & CI/CD", level: 80 },
-  { name: "Azure DevOps", category: "DevOps & CI/CD", level: 72 },
-  { name: "ArgoCD", category: "DevOps & CI/CD", level: 65 },
-  { name: "SonarQube", category: "DevOps & CI/CD", level: 70 },
-  { name: "Nexus Repository", category: "DevOps & CI/CD", level: 60 },
-  { name: "Prometheus / Grafana", category: "DevOps & CI/CD", level: 65 },
+  { name: "Docker", category: "DevOps & CI/CD", level: 70 },
+  { name: "Jenkins", category: "DevOps & CI/CD", level: 75 },
+  { name: "Terraform", category: "DevOps & CI/CD", level: 80 },
+  { name: "Kubernetes", category: "DevOps & CI/CD", level: 50 },
+  { name: "GitHub Actions", category: "DevOps & CI/CD", level: 60 },
+  { name: "Azure DevOps", category: "DevOps & CI/CD", level: 70 },
+  { name: "ArgoCD", category: "DevOps & CI/CD", level: 50 },
+  { name: "Prometheus / Grafana", category: "DevOps & CI/CD", level: 70 },
 
   // Cloud Platforms
-  { name: "AWS", category: "Cloud Platforms", level: 75 },
-  { name: "Azure", category: "Cloud Platforms", level: 68 },
-  { name: "GCP", category: "Cloud Platforms", level: 60 },
-  { name: "AWS EKS", category: "Cloud Platforms", level: 65 },
-  { name: "AWS Elastic Beanstalk", category: "Cloud Platforms", level: 65 },
-  { name: "az-cli", category: "Cloud Platforms", level: 62 },
+  { name: "AWS", category: "Cloud Platforms", level: 80 },
+  { name: "Azure", category: "Cloud Platforms", level: 70 },
+  { name: "GCP", category: "Cloud Platforms", level: 50 },
 
   // Miscellaneous
   { name: "Third-party API Integration", category: "Miscellaneous", level: 82 },
   { name: "Google App Scripts", category: "Miscellaneous", level: 70 },
   { name: "Pabbly Connect", category: "Miscellaneous", level: 68 },
-  { name: "Atlassian (Jira / Confluence)", category: "Miscellaneous", level: 65 },
   { name: "Data Analysis (Python / Looker)", category: "Miscellaneous", level: 65 },
 ];
 
@@ -212,7 +206,7 @@ export const experience = [
   },
   {
     role: "Product & Web Development Intern",
-    company: "TagMango",
+    company: "Eficaz HR Services",
     period: "Apr 2024 – May 2024  ·  Aug 2025 – Oct 2025",
     description:
       "Worked across two stints on full-stack web projects integrating FastAPI backend logic, third-party APIs, and responsive frontends. Contributed to landing pages, marketing strategies, and interactive service demos. Earlier stint involved chatbot research and development using WATI.",

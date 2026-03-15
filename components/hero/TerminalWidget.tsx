@@ -29,7 +29,7 @@ export default function TerminalWidget() {
   const [bootDone, setBootDone] = useState(false);
   const [bootLines, setBootLines] = useState<string[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
-  const bottomRef = useRef<HTMLDivElement>(null);
+  const bodyRef = useRef<HTMLDivElement>(null); // ref on the scrollable terminal body
 
   // Boot sequence
   useEffect(() => {
@@ -41,10 +41,25 @@ export default function TerminalWidget() {
     });
   }, []);
 
-  // Auto scroll to bottom inside terminal only
+  // Scroll terminal body internally using scrollTop — never touches page scroll
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    if (bodyRef.current) {
+      bodyRef.current.scrollTop = bodyRef.current.scrollHeight;
+    }
   }, [history, bootLines]);
+
+  const scrollToSection = (selector: string) => {
+    const el = document.querySelector(selector) as HTMLElement | null;
+    if (!el) return;
+    // Walk up DOM to get true absolute offsetTop
+    let top = 0;
+    let current: HTMLElement = el;
+    while (current.offsetParent) {
+      top += current.offsetTop;
+      current = current.offsetParent as HTMLElement;
+    }
+    window.scrollTo({ top: top - 64, behavior: "instant" });
+  };
 
   const handleCommand = (raw: string) => {
     const cmd = raw.trim().toLowerCase();
@@ -96,10 +111,8 @@ export default function TerminalWidget() {
           ...prev,
           { type: "success", text: `→ navigating to /${target}` },
         ]);
-        setTimeout(() => {
-          const el = document.querySelector(VALID_SECTIONS[target]);
-          el?.scrollIntoView({ behavior: "smooth" });
-        }, 400);
+        // Delay slightly so history state settles, then scroll page
+        setTimeout(() => scrollToSection(VALID_SECTIONS[target]), 300);
         return;
       }
 
@@ -148,8 +161,11 @@ export default function TerminalWidget() {
         </span>
       </div>
 
-      {/* Terminal body */}
-      <div className="p-4 h-52 overflow-y-auto font-mono text-xs flex flex-col gap-1 scrollbar-none">
+      {/* Terminal body — scrollable via scrollTop only */}
+      <div
+        ref={bodyRef}
+        className="p-4 h-52 overflow-y-auto font-mono text-xs flex flex-col gap-1 scrollbar-none"
+      >
         {bootLines.map((line, i) => (
           <p key={i} className="text-white/25">
             {line}
@@ -177,8 +193,6 @@ export default function TerminalWidget() {
             {entry.text}
           </p>
         ))}
-
-        <div ref={bottomRef} />
       </div>
 
       {/* Input row */}

@@ -34,11 +34,9 @@ export const skills = [
 
   // DevOps & CI/CD
   { name: "Docker", category: "DevOps & CI/CD", level: 70 },
-  { name: "Jenkins", category: "DevOps & CI/CD", level: 75 },
+  { name: "Jenkins / GitHub Actions", category: "DevOps & CI/CD", level: 75 },
   { name: "Terraform", category: "DevOps & CI/CD", level: 80 },
   { name: "Kubernetes", category: "DevOps & CI/CD", level: 50 },
-  { name: "GitHub Actions", category: "DevOps & CI/CD", level: 60 },
-  { name: "Azure DevOps", category: "DevOps & CI/CD", level: 70 },
   { name: "ArgoCD", category: "DevOps & CI/CD", level: 50 },
   { name: "Prometheus / Grafana", category: "DevOps & CI/CD", level: 70 },
 
@@ -46,6 +44,7 @@ export const skills = [
   { name: "AWS", category: "Cloud Platforms", level: 80 },
   { name: "Azure", category: "Cloud Platforms", level: 70 },
   { name: "GCP", category: "Cloud Platforms", level: 50 },
+  { name: "Azure DevOps", category: "Cloud Platforms", level: 70 },
 
   // Miscellaneous
   { name: "Third-party API Integration", category: "Miscellaneous", level: 82 },

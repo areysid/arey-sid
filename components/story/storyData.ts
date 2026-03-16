@@ -23,7 +23,7 @@ export const storyEntries = [
     year: "2025",
     commit: "things just got real",
     message: "stopped waiting, started shipping",
-    body: "Third year started slowly — fifth semester came and went without much to show. Then something clicked. Companies were coming for placements, the mandatory internship was around the corner, and I realized I had to actually start building things. So I did. I went full-stack with React and Next.js, but also started getting my hands dirty with real DevOps — Docker, Jenkins, Kubernetes, Terraform. Built CI/CD pipelines, deployed on AWS, and landed an internship at TagMango. Shipped projects that real people used — Eficaz, the POS system, Farm Flow. The git log started filling up fast.",
+    body: "Third year started slowly — fifth semester came and went without much to show. Then something clicked. Companies were coming for placements, the mandatory internship was around the corner, and I realized I had to actually start building things. So I did. I went full-stack with React and Next.js, but also started getting my hands dirty with real DevOps — Docker, Jenkins, Kubernetes, Terraform. Built CI/CD pipelines, deployed on AWS, and landed an internship at Eficaz. Shipped projects that real people used — Eficaz's website, a POS system, Farm Flow. The git log started filling up fast.",
     tags: ["React", "Next.js", "Docker", "Jenkins", "Kubernetes", "Terraform", "AWS", "TagMango Internship"],
     project: null,
   },

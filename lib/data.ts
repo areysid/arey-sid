@@ -28,6 +28,7 @@ export const skills = [
   // Database
   { name: "Prisma / SQL", category: "Database", level: 75 },
   { name: "MongoDB Atlas", category: "Database", level: 60 },
+  { name: "Supabase", category: "Database", level: 70 },
   { name: "Firebase", category: "Database", level: 50 },
   { name: "Convex", category: "Database", level: 65 },
 

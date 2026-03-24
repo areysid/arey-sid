@@ -10,6 +10,7 @@ const VALID_SECTIONS: Record<string, string> = {
   experience: "#experience",
   contact: "#contact",
   home: "#hero",
+  blog: "#blog",
 };
 
 const BOOT_LINES = [

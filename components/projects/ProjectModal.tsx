@@ -29,6 +29,16 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
     return () => window.removeEventListener("keydown", handler);
   }, [onClose]);
 
+  // Prevent body scroll while modal is open
+  useEffect(() => {
+    if (project) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [project]);
+
   return (
     <AnimatePresence>
       {project && (
@@ -49,12 +59,13 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.98 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="fixed inset-x-4 top-1/2 -translate-y-1/2 z-50 max-w-xl mx-auto border border-white/10 bg-[#0e0e0e] p-8"
+            className="fixed inset-x-4 top-1/2 -translate-y-1/2 z-50 max-w-xl mx-auto border border-white/10 bg-[#0e0e0e] p-8 md:p-10"
           >
             {/* Close */}
             <button
               onClick={onClose}
               className="absolute top-4 right-4 text-white/30 hover:text-white/80 transition-colors"
+              aria-label="Close"
             >
               <X size={16} />
             </button>

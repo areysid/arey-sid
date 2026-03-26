@@ -16,7 +16,7 @@ export default function BlogSection() {
       <div className="container-custom">
         <SectionHeader
           index="05"
-          title="Blogs"
+          title="Blog"
           subtitle="Things I learned, things I broke"
         />
 
